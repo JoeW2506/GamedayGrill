@@ -1,0 +1,625 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap");
+
+/* Variables */
+:root {
+  --header-height: 4rem;
+
+  /* Colors */
+
+  --link-color: rgb(234, 166, 103);
+  --text-color: rgb(255, 255, 255);
+  --body-color: rgb(57, 56, 56);
+
+
+
+  /*  Font and typography */
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Syne", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1.1rem; 
+  --large-font-size: 1.35rem;
+
+  /* Font weight variables*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* z index */
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1023px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --normal-font-size: 1.1rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+}
+
+
+html { 
+    background-color: var(--body-color);
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    overflow: scroll;
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.container {
+  max-width: 85%;
+  margin-inline: 1rem;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+}
+
+
+/* Header and Nav */
+.header {
+  position: fixed;
+  top: 0;
+  left: -1%;
+  width: 101%;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+}
+
+.nav {
+  height: var(--header-height);
+  display: flex;
+  align-items: center; 
+  width: 55%; 
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    text-align: center;
+}
+/*Color transitions*/
+
+
+
+.nav__link {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    transition: color .4s;
+}
+
+:is(#order__text):hover {
+    color: black;
+ }
+
+:is(#RSVP__text):hover {
+    color: var(--link-color);
+}
+:is(#events__text):hover {
+    color: var(--link-color);
+}
+:is(#about__text):hover {
+    color: var(--link-color);
+}
+:is(#menu__text):hover {
+    color: var(--link-color);
+}
+
+#order__text {
+    background-color: var(--link-color);
+    width: 120%;
+    height: 120%;
+    padding-top: 5%;
+    position: relative;
+    bottom: 20%;
+    transition: all 0.4s ease-in-out;
+    border-radius: 25px;
+}
+
+
+#order__text:hover {
+    transform: scale(1.05);
+} 
+
+.logo {  
+    max-height: max-content;
+    max-width:6%;
+}
+.nav__logo { 
+    height: auto;
+}
+
+/*Main (First Page*/
+
+
+/*Container*/
+.main__bg {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("background2.png");
+    background-size: cover;   
+    z-index: -1;
+} 
+
+/*Box inside container*/
+
+.box__title {     
+    margin: 0 auto; 
+    position: relative;  
+    top: 30%;
+    width: 50%; 
+    height: 40%; 
+    z-index: 5; 
+    background-color: var(--body-color); 
+    display: flex;
+}
+
+/*Image inside container*/
+.box__img {   
+    margin: 10% 5% 0 5%; 
+    width: 80%;
+   
+}
+ 
+/*Colums for box (flexed)*/
+.col1 h1 { 
+    text-align: center; 
+    font-size: var(--font-regular); 
+    font-weight: bold;
+}
+
+.col3 h1 {
+    text-align: center;
+    font-size: var(--font-regular);
+}
+
+.col1 {
+    height: 100%;
+    width: 40%;
+}
+
+.col2 {
+    width: 30%;
+    height: 100%;
+}
+
+.col3 {
+    width: 40%;
+    height: 100%;
+} 
+/*Lines for theme*/
+.box1 {  
+    margin: 40% 5% 10% 5%;
+    width: 90%; 
+    height: 2%; 
+    background-color: var(--link-color);
+}
+
+.box2 {
+    width: 90%;
+    height: 2%;
+    margin: 10% 5% 0 5%;
+    background-color: var(--link-color);
+}
+
+.box3 {
+    margin: 40% 5% 10% 5%;
+    width: 90%;
+    height: 2%;
+    background-color: var(--link-color);
+}
+
+.box4 {
+    width: 90%;
+    height: 2%;
+    margin: 10% 5% 0 5%;
+    background-color: var(--link-color);
+}
+ 
+
+/*TOP PICKS*/
+
+
+.picks__page {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: 300px;
+    display: flex; 
+    border: solid 5px black;
+}
+
+.picks1 {
+    background-image: url(grill.png);
+    width: 30%;
+}
+
+.picks1 h1 {  
+  position: relative ; 
+  top: 40%; 
+  width: 40%;  
+  height: 30%;
+  left: 35%; 
+  right: 35%; 
+  border: solid 3px black;
+  font-weight: bold;
+}
+
+.picks2 {
+   background-image: url("picksbg.png"); 
+   background-size: cover;
+    width: 70%;
+}
+
+.picks {
+    display: flex;
+    position: relative;
+    top: 5%;
+    overflow: auto; /* Use 'auto' instead of 'scroll' for better mobile compatibility */
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory; /* Enable horizontal scroll snapping */
+}
+
+    .picks::-webkit-scrollbar {
+        width: 16px; /* Set the width of the scrollbar */
+    }
+
+    .picks::-webkit-scrollbar-thumb {
+        background-color: #823006; /* Set the color of the thumb */
+        border-radius: 5px; /* Set the border radius of the thumb */
+    }
+
+    .picks::-webkit-scrollbar-track {
+        background-color: #a3a3a3; /* Set the color of the track */
+    }
+
+    .picks::-webkit-scrollbar-thumb:hover {
+        background-color: #6f2804; /* Set the color of the thumb on hover */
+    }
+
+    .picks::-webkit-scrollbar-button {
+        display: none; /* Hide the scrollbar buttons */
+    }
+
+@media (max-width: 768px) {
+    .picks {
+        flex-wrap: nowrap; /* Disable wrapping on smaller screens */
+        scroll-snap-type: initial; /* Disable scroll snapping on smaller screens */
+        overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 16px; /* Set the width of the scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #823006; /* Set the color of the thumb */
+    border-radius: 5px; /* Set the border radius of the thumb */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #a3a3a3; /* Set the color of the track */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #6f2804; /* Set the color of the thumb on hover */
+}
+
+body::-webkit-scrollbar-button {
+    display: none; /* Hide the scrollbar buttons */
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-wrap: nowrap; /* Disable wrapping on smaller screens */
+        scroll-snap-type: initial; /* Disable scroll snapping on smaller screens */
+        overflow-x: hidden; /* Allow horizontal scrolling on smaller screens */
+    }
+}
+
+
+
+/*ORDER ONLINE */
+
+.order__page {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    background-color: antiquewhite;
+    height: 250px;
+    border: solid 5px black;
+}
+
+
+.order__box {
+    position: relative;
+    right: 10%;
+    left: 10%;
+    top: 15%;
+    width: 80%;
+    height: 175px;
+    background-image: url("orderbg.png"); 
+    background-size: cover;
+    border-radius: 50px; 
+    display: flex;
+} 
+
+.obutton { 
+    text-align: center;    
+    width: 15%; 
+    height: 25%; 
+    margin: 0 auto;  
+    position: relative; 
+    top: 35%; 
+    
+}
+
+
+#order__txt {
+    background-color: var(--link-color);
+    width: 120%;
+    height: 120%;
+    padding-top: 7%; 
+    padding-bottom: 10%;
+    transition: all 0.4s ease-in-out; 
+    border-radius: 25px;
+}
+
+
+#order__txxt:hover {
+    transform: scale(1.05);
+} 
+
+
+
+.order__content {    
+  width: 100%;   
+  position: relative; 
+  left: 5%; top:30%;
+ 
+}
+
+
+
+.order__box h4 {
+    position: relative;
+    left: 5%;
+    top: 30%;
+}
+
+/* MENU */
+
+.main__page {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(picksbg.png);
+    background-size: cover;
+    z-index: -1;
+    height: 100%;
+    border: solid 2.5px black;
+} 
+
+
+
+/* EVENTS */
+.events__page {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-color: var(--body-color);
+    z-index: -1;
+    display: flex;
+    border: solid 5px black;
+} 
+
+.events { 
+    width: 50%; 
+    height: 100%; 
+    text-align: center;   
+   
+}
+
+.RSVP { 
+    width: 50%; 
+    height: 100%; 
+    text-align: center;
+}
+
+.events__button {
+    width: 90%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    border: 10px solid var(--link-color);
+} 
+
+input { 
+    color: white; 
+    font-size: 2.5rem; 
+    font-weight: bold;
+}
+
+#events1 {  
+    background-image: url("./menu/steak.png"); 
+    background-size: cover;
+}
+
+
+#rsvp1 {
+    background-image: url("./menu/salad.jpg");
+    background-size: cover;
+}
+
+
+/* LOCATION */
+
+.location__page {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(address.png);
+    background-size: cover;
+    z-index: -1;
+    display: flex;
+    height: 500px;
+    border: solid 5px black;
+}  
+
+.location__page h1 {  
+    width: 70%; 
+    height: 15%;
+    font-size: 3rem; 
+    text-align: center;
+    position: relative;  
+    left: 15%; 
+    right: 15%;
+    top: 40%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    background-color: rgb(0, 0, 0, 0.6); 
+    padding-top: 1%;
+} 
+
+/* FOOTER */
+
+footer { 
+    width: 100%; 
+    height: 500px; 
+    background-color: var(--body-color); 
+    display: flex;
+}
+
+.footer1 {
+    position: relative;
+    top: 10%;
+    left: 5%;
+    width: 80%;
+} 
+
+.footer1 img { 
+    margin: 0 auto;  
+    width: 50%; 
+    height: 30%; 
+    position: relative; 
+    left: 5%;
+}
+
+.footer2 {
+    width: 20%;
+    text-align: center;
+} 
+
+.footer2 img { 
+    width: 35%;  
+    height: 30%; 
+    margin: 0 auto; 
+    position: relative; 
+    top: 10%; 
+    
+}
+
+
+.contacts { 
+    display: flex; 
+
+} 
+
+.contacts ul { 
+    margin: 5% 0;
+}
+.contacts ul li { 
+    margin: 5% 0; 
+   
+} 
+
+.foot { 
+    padding-left: 5%;
+}
+
+
+/* Navigation for mobile devices */
+@media screen and (max-width: 1023px) {
+    .nav {
+        height: calc(var(--header-height) - 1rem);
+        column-gap: 1rem; 
+        align-items: center; 
+        width: 70%;
+    }
+
+    .nav__menu {
+        margin-left: auto;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        column-gap: 3rem;
+        font-size: calc(var(--font-medium) - 1.3rem);
+        text-align: right;
+    }
+}
+
+
+
+
+
+
+/* Breakpoints */ 
+      
+        /*  medium devices */
+ 
+
+        /* large devices */
+        @media screen and (min-width: 1023px) {
+          .nav {
+            height: calc(var(--header-height) + 2rem);
+            column-gap: 3rem; 
+          }
+
+          .nav__menu {
+            margin-left: auto;
+          }
+          .nav__list {
+            flex-direction: row;
+            column-gap: 3rem;
+          }
+
+}
+
+@media screen and (min-width: 1150px) {
+  .container {
+    margin-inline: auto;
+  }
+}
