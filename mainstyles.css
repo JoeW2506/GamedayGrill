@@ -474,13 +474,13 @@ input {
 }
 
 #events1 {  
-    background-image: url("./menu/steak.png"); 
+    background-image: url("steak.png"); 
     background-size: cover;
 }
 
 
 #rsvp1 {
-    background-image: url("./menu/salad.jpg");
+    background-image: url("salad.jpg");
     background-size: cover;
 }
 
