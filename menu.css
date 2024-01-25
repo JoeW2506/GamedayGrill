@@ -30,7 +30,8 @@
             transform: translateX(-50%);
         }
 
-.buttons {
+.buttons { 
+    margin: 0 auto;
     color: white;
     background-image: url(orderbg.png);
     background-size: cover;
