@@ -669,7 +669,7 @@ footer {
         height: var(--header-height);
         column-gap: .5rem;
         align-items: center;
-        width: 100%;
+        width: 90%;
         font-size: .6rem;
     } 
 
@@ -695,6 +695,20 @@ footer {
         height: 200px;
     }
 
+    .picks1 { 
+        font-size: .5rem;
+    } 
+
+    .picks2 { 
+        font-size: .5rem; 
+
+    }
+
+    .picks-col {
+        display: flex;
+        align-items: center;
+        margin: 10%;
+    }
         .picks1 h1 {
             position: relative;
             top: 30%;
@@ -708,7 +722,7 @@ footer {
 
         .order__page { 
             height: 150px; 
-            font-size: .6rem;
+            font-size: .4rem;
         }
       
            
