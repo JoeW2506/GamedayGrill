@@ -1,9 +1,9 @@
-.menus { 
-   width: 102%;
+.menus {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .menu__title {
@@ -30,7 +30,7 @@
             transform: translateX(-50%);
         }
 
-.buttons { 
+.buttons {
     color: white;
     background-image: url(orderbg.png);
     background-size: cover;
@@ -43,7 +43,7 @@
     height: 50px;
     flex-wrap: wrap;
     transition: all 0.5s ease-in-out;
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
 }
 
     .buttons :hover {
@@ -59,7 +59,7 @@
     }
 
 .menu-col {
-
+    position: relative;
     padding-top: 4%;
     padding-bottom: 4%;
 }
@@ -94,6 +94,11 @@
     transition: opacity 0.2s ease;
 }
 
+.single-col {
+    display: flex;
+    align-items: center;
+    margin: 6%;
+}
 
     .single-col img {
         border-radius: 25px; 
