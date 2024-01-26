@@ -95,11 +95,7 @@
     transition: opacity 0.2s ease;
 }
 
-.single-col {
-    display: flex;
-    align-items: center;
-    margin: 6%;
-}
+
 
     .single-col img {
         border-radius: 25px; 
