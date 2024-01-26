@@ -729,6 +729,11 @@ footer {
 
         .order__box { 
             height: 100px;
+        } 
+
+        .events__page { 
+            font-size: .5rem; 
+            height: 250px;
         }
 
 
@@ -737,7 +742,7 @@ footer {
         position: relative;
         top: 35%;
         width: 50%;
-        height: 30%;
+        height: 20%;
         z-index: 5;
         background-color: var(--body-color);
         display: flex;
