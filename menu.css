@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+.menu__col {
+    text-align: center;
+}
+
     .menu__title h1 {
         text-transform: capitalize;
         font-size: 3rem;
