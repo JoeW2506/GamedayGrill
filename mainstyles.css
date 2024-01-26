@@ -686,7 +686,7 @@ footer {
 
     .nav__list {
         flex-direction: row;
-        column-gap: 3rem;
+        column-gap: 2rem;
         font-size: calc(var(--font-medium) - 1.3rem);
         text-align: right;
     }
