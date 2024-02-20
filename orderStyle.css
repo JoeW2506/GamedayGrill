@@ -435,6 +435,7 @@ body {
         height: 100%;
         overflow: hidden;
         width: 100vw;
+        background-color: var(--body-color);
 
     }
 
@@ -455,7 +456,7 @@ body {
     }
 
     #logo {
-        width: 90px;
+        width: 70px;
         height: 70px;
     }
 
@@ -549,6 +550,7 @@ body {
         margin: 12px 0;
         color: rgb(207 149 98);
         font-weight: 300;
+        background-color: var(--body-color);
     }
 
     .mobile-footer {
@@ -556,16 +558,19 @@ body {
         text-transform: uppercase;
         font-size: 16px;
         position: static;
+        background-color: var(--body-color);
     }
 
     #category-name {
         font-size: 25px;
         font-family: 'Aclonica', sans-serif;
+        
     }
 
     #item-card {
         width: 150px;
         height: 200px;
+        background-color: var(--body-color);
     }
 
         #item-card img {
