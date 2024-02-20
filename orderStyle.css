@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 
@@ -426,6 +426,7 @@ body {
 @media screen and (max-width : 800px) and (-webkit-min-device-pixel-ratio: 2) {
     .container {
         display: none;
+       
     }
 
     #mobile-view {
@@ -438,7 +439,7 @@ body {
 
     .mobile-top {
         padding: 5px 15px;
-        background: white;
+        background-color: var(--body-color);
         z-index: 1;
     }
 
