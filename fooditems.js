@@ -4,7 +4,7 @@ const foodItem = [
         name: 'BLT Sandwich',
         category: 'classic',
         rating: 4.7,
-        price: 11,
+        price: 11.99,
         img: 'bltSandwich.png',
         quantity: 1
     },
@@ -13,7 +13,7 @@ const foodItem = [
         name: 'Cheese Burger',
         category: 'classic',
         rating: 4.6,
-        price: 15,
+        price: 15.99,
         img: 'burg.png',
         quantity: 1
     },
@@ -22,7 +22,7 @@ const foodItem = [
         name: 'pasta',
         category: 'classic',
         rating: 4.2,
-        price: 18,
+        price: 18.99,
         img: 'pasta.jpg',
         quantity: 1
     },
@@ -31,7 +31,7 @@ const foodItem = [
         name: 'BBQ Ribs',
         category: 'classic',
         rating: 4.9,
-        price: 15,
+        price: 15.99,
         img: 'ribs.jpg',
         quantity: 1
     },
@@ -40,7 +40,7 @@ const foodItem = [
         name: 'Fried Shrimp',
         category: 'appetizer',
         rating: 4.1,
-        price: 10,
+        price: 10.99,
         img: 'fShrimp.png',
         quantity: 1
     },
@@ -49,7 +49,7 @@ const foodItem = [
         name: 'Bavarian Pretzels',
         category: 'appetizer',
         rating: 4.3,
-        price: 12,
+        price: 12.99,
         img: 'pretzel.jpg',
         quantity: 1
     },
