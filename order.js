@@ -222,9 +222,19 @@ function addToCart() {
     if (index === -1) {
         document.getElementById(itemObj.id).classList.add('toggle-cart');
         cartData = [...cartData, itemObj];
+        alert("Added to cart!");
+
     }
     else if (index > -1) {
-        alert("Added to cart!");
+        alert("Added another item to cart!");
+        console.log(itemToAdd)
+        var incObj = cartData.find(element => element.name == itemToAdd);
+        incObj.quantity += 1;
+
+        currPrice = (incObj.price * incObj.quantity - incObj.price * (incObj.quantity - 1)) / (incObj.quantity - 1);
+        incObj.price = currPrice * incObj.quantity;
+        totalAmount()
+        cartItems();
     }
 
     document.getElementById('cart-plus').innerText =
