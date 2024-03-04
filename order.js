@@ -26,7 +26,7 @@ function displayItems() {
         star.innerText = ' ' + item.rating;
 
         var heart = document.createElement('i');
-        heart.setAttribute('class', 'fa fa-heart-o add-to-cart');
+        heart.setAttribute('class', 'fa fa-cart-plus fa-lg add-to-cart');
         heart.setAttribute('id', item.id)
 
         cardTop.appendChild(star);
@@ -67,7 +67,7 @@ function displayItems() {
         star.innerText = ' ' + item.rating;
 
         var heart = document.createElement('i');
-        heart.setAttribute('class', 'fa fa-heart-o add-to-cart');
+        heart.setAttribute('class', 'fa fa-cart-plus fa-lg add-to-cart');
         heart.setAttribute('id', item.id)
 
         cardTop.appendChild(star);
@@ -107,7 +107,7 @@ function displayItems() {
         star.innerText = ' ' + item.rating;
 
         var heart = document.createElement('i');
-        heart.setAttribute('class', 'fa fa-heart-o add-to-cart');
+        heart.setAttribute('class', 'fa fa-cart-plus fa-lg add-to-cart');
         heart.setAttribute('id', item.id)
 
         cardTop.appendChild(star);
@@ -147,7 +147,7 @@ function displayItems() {
         star.innerText = ' ' + item.rating;
 
         var heart = document.createElement('i');
-        heart.setAttribute('class', 'fa fa-heart-o add-to-cart');
+        heart.setAttribute('class', 'fa fa-cart-plus fa-lg add-to-cart');
         heart.setAttribute('id', item.id)
 
         cardTop.appendChild(star);
@@ -220,7 +220,7 @@ function addToCart() {
 
     var index = cartData.indexOf(itemObj);
     if (index === -1) {
-        document.getElementById(itemObj.id).classList.add('toggle-heart');
+        document.getElementById(itemObj.id).classList.add('toggle-cart');
         cartData = [...cartData, itemObj];
     }
     else if (index > -1) {
@@ -266,7 +266,7 @@ function cartItems() {
         rowData3.appendChild(btn2);
 
         var rowData4 = document.createElement('td');
-        rowData4.innerText = item.price;
+        rowData4.innerText = item.price.toFixed(2);
 
         tableRow.appendChild(rowData1);
         tableRow.appendChild(rowData2);
@@ -303,12 +303,12 @@ function decrementItem() {
     let decObj = cartData.find(element => element.name == itemToInc);
     let ind = cartData.indexOf(decObj);
     if (decObj.quantity > 1) {
-        currPrice = (decObj.price * decObj.quantity - decObj.price * (decObj.quantity-1)) / (decObj.quantity);
+        currPrice = (decObj.price * decObj.quantity - decObj.price * (decObj.quantity - 1)) / (decObj.quantity);
         decObj.quantity -= 1;
         decObj.price = currPrice * decObj.quantity;
     }
     else {
-        document.getElementById(decObj.id).classList.remove('toggle-heart')
+        document.getElementById(decObj.id).classList.remove('toggle-cart')
         cartData.splice(ind, 1);
         document.getElementById('cart-plus').innerText = ' ' + cartData.length + ' Items';
         document.getElementById('m-cart-plus').innerText = ' ' + cartData.length;
@@ -334,8 +334,8 @@ function totalAmount() {
         sum += item.price;
     })
     document.getElementById('total-item').innerText = 'Total Item : ' + cartData.length;
-    document.getElementById('total-price').innerText = 'Total Price : $ ' + sum;
-    document.getElementById('m-total-amount').innerText = 'Total Price : $ ' + sum;
+    document.getElementById('total-price').innerText = 'Total Price : $ ' + sum.toFixed(2);
+    document.getElementById('m-total-amount').innerText = 'Total Price : $ ' + sum.toFixed(2);
 }
 
 document.getElementById('cart-plus').addEventListener('click', cartToggle);
