@@ -212,13 +212,16 @@ body {
 
 #rating {
     padding: 8px;
-    color: goldenrod;
+    color: goldenrod;;
     background: black;
-    font-size: 14px;
+    font-size: 17px;
     border-radius: 50px;
     margin-left: -2px;
 }
+#total-item {
 
+    font-size: 30px;
+}
 .fa-cart-plus {
     padding: 10px;
     border-radius: 30%;
