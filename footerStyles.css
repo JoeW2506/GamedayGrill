@@ -1,0 +1,147 @@
+/*
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+    */
+footer {
+    background-color: #000000ff;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+    padding: 3rem 1rem;
+}
+
+.footContainer {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footCol {
+    min-width: 250px;
+    color: rgb(255, 255, 255);
+    font-family: poppins;
+    padding: 0 2rem;
+}
+
+    .footCol .footLogo {
+        width: 500px;
+        margin-bottom: 25px;
+    }
+
+    .footCol h3 {
+        color: rgb(234, 166, 103);
+        margin-bottom: 20px;
+        position: relative;
+        cursor: pointer;
+    }
+
+        .footCol h3::after {
+            content: '';
+            height: 3px;
+            width: 0px;
+            background-color: rgb(234, 166, 103);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 0.3s ease;
+        }
+
+        .footCol h3:hover::after {
+            width: 30px
+        }
+
+    .footCol .social a i {
+        color: rgb(234, 166, 103);
+        margin-top: 2rem;
+        margin-right: 5px;
+        transition: 0.3s ease;
+    }
+
+        .footCol .social a i:hover {
+            transform: scale(1.5);
+            filter: grayscale(25);
+        }
+
+    .footCol .links a {
+        display: block;
+        text-decoration: none;
+        color: #f2f2f2;
+        margin-bottom: 5px;
+        position: relative;
+        transition: 0.3s ease;
+    }
+
+        .footCol .links a::before {
+            content: '';
+            height: 16px;
+            width: 3px;
+            position: absolute;
+            top: 5px;
+            left: -10px;
+            background-color: rgb(234, 166, 103);
+            transition: 0.5s ease;
+            opacity: 0;
+        }
+
+        .footCol .links a:hover::before {
+            opacity: 1;
+        }
+
+        .footCol .links a:hover {
+            transform: translateX(-8px);
+            color: rgb(234, 166, 103);
+        }
+
+    .footCol .contact-details {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+        .footCol .contact-details i {
+            margin-right: 15px;
+        }
+
+/********** Responsive Design ********/
+@media(max-width:900px) {
+    .footRow {
+        flex-direction: column;
+    }
+
+    .footCol {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width:768px) {
+    .footRow {
+        flex-direction: column;
+    }
+
+    .footCol {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+}
