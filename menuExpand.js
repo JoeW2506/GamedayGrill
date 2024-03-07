@@ -83,7 +83,7 @@ function dessert__food__clicked() {
 const picksElement = document.querySelector('.picks');
 
 // Set the autoscroll speed (pixels per second)
-const scrollSpeed = 100;
+const scrollSpeed = 65;
 
 // Set the duration of autoscroll (in seconds)
 const scrollDuration = 10; // Adjust based on your preference
