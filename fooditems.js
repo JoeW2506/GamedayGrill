@@ -19,7 +19,7 @@ const foodItem = [
     },
     {
         id: 3,
-        name: 'pasta',
+        name: 'Pasta',
         category: 'classic',
         rating: 4.2,
         price: 13.99,
@@ -55,7 +55,7 @@ const foodItem = [
     },
     {
         id: 7,
-        name: 'wings',
+        name: 'Wings',
         category: 'classic',
         rating: 3.9,
         price: 11.99,
@@ -73,7 +73,7 @@ const foodItem = [
     },
     {
         id: 9,
-        name: 'salad',
+        name: 'Salad',
         category: 'side',
         rating: 4.0,
         price: 6.99,
@@ -100,7 +100,7 @@ const foodItem = [
     },
     {
         id: 12,
-        name: 'potato Wedges',
+        name: 'Potato Wedges',
         category: 'side',
         rating: 4.6,
         price: 7.99,
@@ -109,7 +109,7 @@ const foodItem = [
     },
     {
         id: 13,
-        name: 'Strawberry Shortcake',
+        name: 'Shortcake',
         category: 'dessert',
         rating: 4.8,
         price: 8.99,
@@ -127,7 +127,7 @@ const foodItem = [
     },
     {
         id: 15,
-        name: 'Hot Fudge Brownie',
+        name: 'Brownie',
         category: 'dessert',
         rating: 4.3,
         price: 7.99,
@@ -145,7 +145,7 @@ const foodItem = [
     },
     {
         id: 17,
-        name: 'Mini Cinnamon Rolls',
+        name: 'Cinnamon Rolls',
         category: 'dessert',
         rating: 4.4,
         price: 4.99,
@@ -154,7 +154,7 @@ const foodItem = [
     },
     {
         id: 18,
-        name: 'Peanut Butter Bars',
+        name: 'Reese Bars',
         category: 'dessert',
         rating: 4.8,
         price: 6.99,
@@ -163,7 +163,7 @@ const foodItem = [
     },
     {
         id: 19,
-        name: 'Vanilla Cheese Cake',
+        name: 'Cheese Cake',
         category: 'dessert',
         rating: 4.7,
         price: 13.99,
@@ -172,7 +172,7 @@ const foodItem = [
     },
     {
         id: 20,
-        name: 'Mozzarella Sticks',
+        name: 'Mozz Sticks',
         category: 'appetizer',
         rating: 4.1,
         price: 8.99,
@@ -208,7 +208,7 @@ const foodItem = [
     },
     {
         id: 24,
-        name: 'Chicken Sandwich',
+        name: 'Chicken',
         category: 'classic',
         rating: 4.3,
         price: 16.99,
@@ -217,7 +217,7 @@ const foodItem = [
     },
     {
         id: 25,
-        name: 'Pulled Pork Sandwich',
+        name: 'Pulled Pork',
         category: 'classic',
         rating: 4.9,
         price: 13.99,
@@ -235,7 +235,7 @@ const foodItem = [
     },
     {
         id: 27,
-        name: 'Fried Cheese Curds',
+        name: 'Cheese Curds',
         category: 'side',
         rating: 4.4,
         price: 8.99,
@@ -244,7 +244,7 @@ const foodItem = [
     },
     {
         id: 28,
-        name: 'Nachos & Cheese',
+        name: 'Nachos',
         category: 'appetizer',
         rating: 4.2,
         price: 13.99,
@@ -280,7 +280,7 @@ const foodItem = [
     },
     {
         id: 31,
-        name: 'Sweet Potato Taters',
+        name: 'SweetTaters',
         category: 'side',
         rating: 4.0,
         price: 10.99,
