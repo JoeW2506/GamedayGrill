@@ -669,18 +669,7 @@ footer {
         display: none;
     }
 
-    footer {
-        height: 20%;
-    }
-
-    .footer2 {
-        width: 40%;
-        margin: 0 auto;
-        height: 90%; 
-        padding-left: 5%; 
-        padding-top: 1%;
-    }
-
+    
     .contacts {
         width: 20%;
         font-size: .5rem; 
@@ -834,18 +823,7 @@ footer {
         display: none;
     } 
     
-    footer { 
-        height: 20%; 
-        
-    }  
-
-    .footer2 { 
-        width: 50%; 
-        margin: 0 auto; 
-        height: 100%; 
-        padding-left: 10%; 
-        padding-top: 2%;
-    }
+    
     .contacts {
         width: 20%; 
         font-size: .5rem;
