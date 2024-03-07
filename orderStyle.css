@@ -25,7 +25,8 @@
 }
 
 html {
-    height: 100%;
+    height: 100%; 
+
 }
 
 body {
@@ -33,20 +34,22 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    height: 100%;
+    height: 100%; 
+    background-color: burlywood;
 }
 
-.container {
+#container {
     display: grid;
     grid-template-columns: 250px 1fr 300px;
-    min-height: 100vh;
+    min-height: 90%;
     min-height: -webkit-fill-available;
     overflow: hidden;
-    background-color: var(--body-color);
+    background-color: burlywood;
+    padding-top: 10%;
 }
 
 #menu {
-    background-color: var(--body-color);
+    background-color: burlywood;
 }
 
 .title {
@@ -56,8 +59,8 @@ body {
 #menu img {
     width: 70%;
     height: 70%;
-    border-radius: %;
-    margin-top: -20px;
+    margin: 0 auto;  
+    padding-top: 40%;
 }
 
 .title p {
@@ -73,7 +76,7 @@ body {
     margin: 3px 0;
     margin-bottom: 30px;
     border-radius: 2px;
-    background-color: orange;
+    background-color: burlywood;
 }
 
 .menu-item a {
@@ -95,7 +98,7 @@ body {
     background: whitesmoke;
     overflow: auto;
     height: calc(100vh - 86px);
-    background-color: var(--body-color);
+    background-color:burlywood;
 }
 
 #header {
@@ -108,7 +111,7 @@ body {
     top: 0;
     background: whitesmoke;
     z-index: 1;
-    background-color: var(--body-color);
+    background-color: burlywood;
 }
 
 ::-webkit-scrollbar {
@@ -274,7 +277,7 @@ body {
     padding: 20px 30px;
     padding-bottom: 30px;
     position: relative;
-    background-color: var(--body-color);
+    background-color: burlywood;
 }
 
 #cart-title {
@@ -324,14 +327,14 @@ body {
     border-radius: 3px;
     cursor: pointer;
     margin: 0 5px;
-    background-color: var(--body-color);
+    background-color: burlywood;
 }
 
 #cart-page table tbody img {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background-color: var(--body-color);
+    background-color: burlywood;
 }
 
 #checkout {
@@ -361,7 +364,7 @@ body {
     background: whitesmoke;
     padding-right: 30px;
     overflow-y: scroll;
-    background-color: var(--body-color);
+    background-color: burlywood;
 }
 
 .item-menu {
@@ -370,7 +373,7 @@ body {
     margin-top: 40px;
     color: indianred;
     background: whitesmoke;
-    background-color: var(--body-color);
+    background-color: burlywood;
 }
 
 .list-card {
@@ -380,7 +383,7 @@ body {
     border-radius: 25px;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
-    background-color: var(--body-color);
+    background-color: burlywood;
 }
 
     .list-card:hover {
@@ -407,7 +410,7 @@ body {
 }
 
 .taste-header {
-    background-color: var(--body-color);
+    background-color: burlywood;
     padding-top: 40px;
     padding-bottom: 10px;
     position: sticky;
@@ -415,7 +418,7 @@ body {
 }
 
 #mobile-view {
-    background-color: var(--body-color);
+    background-color: burlywood;
     display: none;
 }
 
@@ -460,7 +463,7 @@ body {
 
 /* Additional Styles for Consistency */
 .inputBox {
-    background-color: var(--body-color);
+    background-color: burlywood;
     padding: 20px;
     border-radius: 5px;
 }
@@ -488,12 +491,12 @@ body {
         height: 100%;
         overflow: hidden;
         width: 100vw;
-        background-color: var(--body-color);
+        background-color: burlywood;
     }
 
     .mobile-top {
         padding: 5px 15px;
-        background-color: var(--body-color);
+        background-color: burlywood;
         z-index: 1;
     }
 
@@ -602,7 +605,7 @@ body {
         margin: 12px 0;
         color: rgb(207 149 98);
         font-weight: 300;
-        background-color: var(--body-color);
+        background-color: burlywood;
     }
 
     .mobile-footer {
@@ -610,7 +613,7 @@ body {
         text-transform: uppercase;
         font-size: 16px;
         position: static;
-        background-color: var(--body-color);
+        background-color: burlywood;
     }
 
     #category-name {
@@ -621,7 +624,7 @@ body {
     #item-card {
         width: 150px;
         height: 200px;
-        background-color: var(--body-color);
+        background-color: burlywood;
     }
 
         #item-card img {
