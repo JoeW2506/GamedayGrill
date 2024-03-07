@@ -695,7 +695,7 @@ footer {
 
     .box__title {     
         position: absolute;  
-        bottom: 70%;
+        bottom: 80%;
         width: 50%;  
         left: 25%;
         height: 10%; 
@@ -707,7 +707,7 @@ footer {
 
     .box__img {  
         width: 30%;
-        margin: 2.5% 0 0 35%;
+        margin: 10% 0 0 40%;
     }
 
     .nav {
@@ -732,11 +732,17 @@ footer {
         padding-top: 0.5%;
     } 
     
-    #order__text { 
-        padding-right: 6%;
-        padding-top: 3%;
-    }
+    
 
+    #order__text {
+        width: 140%;
+        height: 110%;
+        padding-top: 5%;
+        position: relative;
+        bottom: 20%;
+        transition: all 0.4s ease-in-out;
+        border-radius: 25px;
+    }
   
 
     .nav__menu {
@@ -746,7 +752,7 @@ footer {
     .nav__list {
         flex-direction: row;
         column-gap: 2rem;
-        font-size: calc(var(--font-medium) - 1.3rem);
+        font-size: calc(var(--font-medium) - 1.5rem);
         text-align: right;
     }
 
@@ -761,6 +767,11 @@ footer {
     .picks2 { 
         font-size: .5rem; 
 
+    } 
+
+    #order__text2 {
+        width: 250px;
+        padding-top: 5%;
     }
 
     .picks-col {
