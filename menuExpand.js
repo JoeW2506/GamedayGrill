@@ -86,7 +86,7 @@ const picksElement = document.querySelector('.picks');
 const scrollSpeed = 65;
 
 // Set the duration of autoscroll (in seconds)
-const scrollDuration = 10; // Adjust based on your preference
+const scrollDuration = 999999999999; // Adjust based on your preference
 
 // Variable to track the start time
 let startTime;
