@@ -246,17 +246,24 @@ img {
     left: 0;
     width: 100%;
     z-index: -1;
-    height: 300px;
+    height: 310px;
     display: flex;
     border: solid 5px black;
     overflow: auto; /* Hide the default scrollbar */
     position: relative; /* Add position:relative */
     scroll-snap-type: x mandatory; /* Enable horizontal scroll snapping */
-    width: 110%; /* Adjust width as needed */
+    width: 110%; /* Adjust width as needed */ 
+
 }
 
-.picks1 {
-    background-image: url(grill.png);
+.picks__page img { 
+    min-width: 150px; 
+    min-height: 150px;
+} 
+
+
+.picks1 { 
+    background: url(flame3.gif) center/ cover no-repeat;
     width: 30%;
 }
 
@@ -282,8 +289,6 @@ img {
     position: relative;
     overflow: hidden; /* Use 'auto' instead of 'scroll' for better mobile compatibility */
     overflow-y: hidden;
-    top: 5%;
-    
 }
 
 @media (max-width: 768px) {
@@ -403,9 +408,8 @@ body::-webkit-scrollbar-button {
     background-image: url(picksbg.png);
     background-size: cover;
     z-index: -1;
-    height: 100%;
     border: solid 2.5px black;
-
+    height: 500px;
 } 
 
 
@@ -486,7 +490,7 @@ input {
     top: 40%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
     background-color: rgb(0, 0, 0, 0.6); 
-    padding-top: 1%;
+    padding-top: 0.5%;
 } 
 
 /* FOOTER */
@@ -498,34 +502,6 @@ footer {
     display: flex;
 }
 
-.footer1 {
-    position: relative;
-    top: 10%;
-    left: 5%;
-    width: 80%;
-} 
-
-.footer1 img { 
-    margin: 0 auto;  
-    width: 50%; 
-    height: 30%; 
-    position: relative; 
-    left: 5%;
-}
-
-.footer2 {
-    width: 20%;
-    text-align: center;
-} 
-
-.footer2 img { 
-    width: 35%;  
-    height: 30%; 
-    margin: 0 auto; 
-    position: relative; 
-    top: 10%; 
-    
-}
 
 
 .contacts { 
