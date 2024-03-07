@@ -249,7 +249,7 @@ img {
     left: 0;
     width: 100%;
     z-index: -1;
-    height: 500px;
+    height: 300px;
     display: flex;
     border: solid 5px black;
     overflow: auto; /* Hide the default scrollbar */
