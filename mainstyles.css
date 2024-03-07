@@ -620,10 +620,10 @@ footer {
 
     .box__title {     
         position: absolute;  
-        bottom: 65%;
+        bottom: 40%;
         width: 50%;  
         left: 25%;
-        height: 20%; 
+        height: 40%; 
         z-index: 5; 
         background-color: var(--body-color); 
         display: flex; 
@@ -631,8 +631,8 @@ footer {
     }
 
     .box__img {  
-        width: 50%; 
-        margin: 15% 0 0 25%;
+        width: 60%; 
+        margin: 20% 0 0 20%;
     }
 
     .nav {
