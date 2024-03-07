@@ -175,14 +175,14 @@ img {
     height: 40%; 
     z-index: 5; 
     background-color: var(--body-color); 
-    display: flex;
+    display: flex; 
+    border-radius: 25px;
 }
 
 /*Image inside container*/
-.box__img {   
-    margin: 5% 5% 0 5%; 
-    width: 90%;
-   
+.box__img {    
+    width: 80%; 
+    margin: 10% 0 0 10%;
 }
  
 /*Colums for box (flexed)*/
@@ -265,7 +265,7 @@ img {
 
     .picks1 h1 {
         position: relative;
-        top: 20%;
+        top: 40%;
         width: 40%;
         height: 30%;
         left: 35%;
@@ -283,10 +283,9 @@ img {
 .picks {
     display: flex;
     position: relative;
-    top: 5%;
     overflow: hidden; /* Use 'auto' instead of 'scroll' for better mobile compatibility */
     overflow-y: hidden;
-    height: 400px;
+    top: 5%;
     
 }
 
