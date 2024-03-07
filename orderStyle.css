@@ -185,6 +185,9 @@ body {
     #appetizer #item-card, #dessert #item-card {
         background: rgb(218, 253, 188);
     }
+#classic #item-card, #side #item-card {
+        background: rgb(241 214 232);
+    }
 
 #category-name, .item-menu {
     margin: 10px;
