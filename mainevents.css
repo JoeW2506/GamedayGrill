@@ -452,7 +452,8 @@ section {
     display: flex;
     justify-content: center; 
     flex-wrap: wrap;  
-    padding-top: 150px;
+    padding-top: 150px; 
+    overflow: scroll;
 }
 
 .eventcard {
