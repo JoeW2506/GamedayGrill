@@ -1,3 +1,4 @@
+
 const menu = document.querySelector('main__page');
 const classic = document.getElementById('classic__food');
 
@@ -77,3 +78,50 @@ function dessert__food__clicked() {
         }, { once: true });
     }
 }
+
+// Get the element containing the picks
+const picksElement = document.querySelector('.picks');
+
+// Set the autoscroll speed (pixels per second)
+const scrollSpeed = 100;
+
+// Set the duration of autoscroll (in seconds)
+const scrollDuration = 10; // Adjust based on your preference
+
+// Variable to track the start time
+let startTime;
+
+// Function to perform the autoscroll animation
+function autoScrollPicks(timestamp) {
+    // Set the start time if not set
+    if (!startTime) {
+        startTime = timestamp;
+    }
+
+    // Calculate the elapsed time
+    const elapsedTime = timestamp - startTime;
+
+    // Calculate the scroll amount based on the speed and time elapsed
+    const scrollAmount = (elapsedTime / 1000) * scrollSpeed;
+
+    // Update the scroll position
+    picksElement.scrollLeft = scrollAmount;
+
+    // Check if the end of the scrollable content is reached
+    if (picksElement.scrollLeft + picksElement.clientWidth >= picksElement.scrollWidth) {
+        // Reset scroll position to the beginning
+        picksElement.scrollLeft = 0;
+
+        // Reset the start time for continuous scrolling
+        startTime = timestamp;
+    }
+
+    // Continue scrolling until the duration is reached
+    if (elapsedTime < scrollDuration * 1000) {
+        // Request the next animation frame for continuous scrolling
+        requestAnimationFrame(autoScrollPicks);
+    }
+}
+
+// Start the autoscroll animation loop
+requestAnimationFrame(autoScrollPicks);

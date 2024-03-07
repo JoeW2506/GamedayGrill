@@ -214,7 +214,6 @@ document.querySelectorAll('.add-to-cart').forEach(item => {
 
 var cartData = [];
 function addToCart() {
-
     var itemToAdd = this.parentNode.nextSibling.nextSibling.innerText;
     var itemObj = foodItem.find(element => element.name == itemToAdd);
 
@@ -222,12 +221,10 @@ function addToCart() {
     if (index === -1) {
         document.getElementById(itemObj.id).classList.add('toggle-cart');
         cartData = [...cartData, itemObj];
-        alert("Added to cart!");
 
-    }
-    else if (index > -1) {
-        alert("Added another item to cart!");
-        console.log(itemToAdd)
+        // Show notification
+        showNotification('Added to Cart!');
+    } else if (index > -1) {
         var incObj = cartData.find(element => element.name == itemToAdd);
         incObj.quantity += 1;
 
@@ -237,13 +234,12 @@ function addToCart() {
         cartItems();
     }
 
-    document.getElementById('cart-plus').innerText =
-        ' ' + cartData.length + ' Items';
-    document.getElementById('m-cart-plus').innerText =
-        ' ' + cartData.length;
+    document.getElementById('cart-plus').innerText = ' ' + cartData.length + ' Items';
+    document.getElementById('m-cart-plus').innerText = ' ' + cartData.length;
     totalAmount();
     cartItems();
 }
+
 
 
 function cartItems() {
@@ -420,3 +416,34 @@ function addAddress() {
         alert("Address not added")
     }
 }
+function processPayment() {
+    alert("Thank you for your purchase! We sent you the receipt.");
+
+    // Clear the cart after payment
+    cartData = [];
+    document.getElementById('cart-plus').innerText = ' ' + cartData.length + ' Items';
+    document.getElementById('m-cart-plus').innerText = ' ' + cartData.length;
+    cartItems();
+}
+function showNotification(message) {
+    var notification = document.createElement('div');
+    notification.classList.add('notification');
+    notification.innerText = message;
+
+    // Append notification to the body
+    document.body.appendChild(notification);
+
+    // Remove the notification after a certain duration
+    setTimeout(function () {
+        notification.remove();
+    }, 2000); // Adjust the duration (in milliseconds) as needed
+}
+
+// Your existing code...
+
+document.querySelectorAll('.fa-cart-arrow-down').forEach(item => {
+    item.addEventListener('click', function () {
+        // Show notification
+        showNotification('Cart icon clicked!');
+    });
+});
