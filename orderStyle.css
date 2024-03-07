@@ -202,8 +202,16 @@ body {
 #item-card {
     width: 180px;
     height: 240px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background: rgb(253, 221, 226);
+    cursor: pointer;
     transition: 0.5s all step-end;
 }
+
+    
 
     #item-card:hover img {
         transform: scale(1.2);
