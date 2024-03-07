@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
-
+    <title>Food Website</title>
     <link rel="stylesheet" href="/orderStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -87,7 +87,25 @@
                 <p id="total-price"></p>
                 <p id="payment-method">Billing Address</p>
                 <div class="inputBox">
+                    <!-- Your existing "Billing Address" content goes here -->
+                    <!-- Payment Form -->
+                    <h2>Payment Details</h2>
+                    <form id="paymentForm">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your email here " required>
 
+                        <label for="cardNumber">Card Number:</label>
+                        <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number" required>
+
+                        <label for="expiryDate">Expiration Date:</label>
+                        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+
+                        <button type="button" onclick="processPayment()">Submit Payment</button>
+                    </form>
+                    <!-- End Payment Form -->
                 </div>
                 <button class="cart-btn">Checkout</button>
             </div>

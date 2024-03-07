@@ -427,6 +427,56 @@ body {
     display: none;
 }
 
+#paymentForm {
+    margin-top: 20px;
+}
+
+    #paymentForm label {
+        display: block;
+        margin-bottom: 5px;
+        color: coral;
+        font-size: 16px;
+    }
+
+    #paymentForm input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+
+    #paymentForm button {
+        background-color: #559aff;
+        color: #ffffff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        #paymentForm button:hover {
+            background-color: #3a75c4;
+        }
+
+/* Additional Styles for Consistency */
+.inputBox {
+    background-color: var(--body-color);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.cart-btn {
+    background-color: #559aff;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .cart-btn:hover {
+        background-color: #3a75c4;
+    }
 @media screen and (max-width : 800px) and (-webkit-min-device-pixel-ratio: 2) {
     .container {
         display: none;
